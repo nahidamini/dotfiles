@@ -1,14 +1,7 @@
 [includeIf "gitdir:~/Documents/src/professional"]
-	path = ~/.gitconfig-professional
+    path = ~/.gitconfig-professional
 [includeIf "gitdir:~/Documents/src/personal/"]
-	path = ~/.gitconfig-personal
-
-[merge]
-    tool = meld
-[mergetool "meld"]
-    # Choose one of these 2 lines (not both!) explained below.
-    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
-    #cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+    path = ~/.gitconfig-personal
 
 [core]
     pager = delta
